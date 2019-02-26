@@ -1,7 +1,9 @@
-# <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/7/7b/Morphling_icon.png?version=e3fb6a35e9420dff83b5bcf3015a816c" width="40" height="40" alt=":morphling:" class="emoji" title=":morphling:"/> Morphling [![Build Status](https://travis-ci.org/ahartanto/morphling.svg?branch=master)](https://travis-ci.org/ahartanto/morphling) [![GoDoc](https://godoc.org/github.com/ahartanto/morphling?status.svg)](https://godoc.org/github.com/ahartanto/morphling)
+# <img src="https://gamepedia.cursecdn.com/dota2_gamepedia/f/f5/Main_Page_icon_Heroes.png" width="40" height="40" alt=":morphling:" class="emoji" title=":morphling:"/> Morphling [![Build Status](https://travis-ci.org/ahartanto/morphling.svg?branch=master)](https://travis-ci.org/ahartanto/morphling) [![GoDoc](https://godoc.org/github.com/ahartanto/morphling?status.svg)](https://godoc.org/github.com/ahartanto/morphling)
 
 Morphling is a SQL wrapper for database replication topology. Morphling helps you to determine which connection to be
 used when execute query to the sql database. **It's not an ORM**
+
+_**Note** : This a modified version version of [morphling](https://github.com/ahartanto/morphling) library with an additional feature. Please refer to the original repo for the original features._
 
 **Why you need morphling ?**
 Golang sql package is allowed you to open multiple connection, but without any restriction, means any connection you
@@ -18,7 +20,7 @@ package main
 
 import (
     "fmt"
-    "github.com/ahartanto/morphling"
+    "github.com/cikupin/morphling"
     _ "github.com/go-sql-driver/mysql"
 )
 
@@ -64,5 +66,5 @@ func main() {
 Fun fact, *Morphling* is a ranged agility **dota** hero that has many flexible abilities. His ultimate, Morph,
 transforms him into a copy of an enemy using their stats and basic abilities.
 
-Morphling can be as an analogy of database replication, `select / read` data is a basic abilites that replica has,
-while `insert`, `update` and `delete` is the main abilites.
+Morphling can be as an analogy of database replication, `select / read` data is the only basic abilites that replica has,
+while `select / read`, `insert`, `update` and `delete` is the main abilites.

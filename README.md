@@ -1,4 +1,4 @@
-# <img src="https://gamepedia.cursecdn.com/dota2_gamepedia/f/f5/Main_Page_icon_Heroes.png" width="40" height="40" alt=":morphling:" class="emoji" title=":morphling:"/> Morphling [![Build Status](https://travis-ci.org/ahartanto/morphling.svg?branch=master)](https://travis-ci.org/ahartanto/morphling) [![GoDoc](https://godoc.org/github.com/ahartanto/morphling?status.svg)](https://godoc.org/github.com/ahartanto/morphling)
+# <img src="https://gamepedia.cursecdn.com/dota2_gamepedia/f/f5/Main_Page_icon_Heroes.png" width="40" height="40" alt=":morphling:" class="emoji" title=":morphling:"/> Morphling [![Build Status](https://travis-ci.org/cikupin/morphling.svg?branch=master)](https://travis-ci.org/cikupin/morphling) [![GoDoc](https://godoc.org/github.com/cikupin/morphling?status.svg)](https://godoc.org/github.com/cikupin/morphling)
 
 Morphling is a SQL wrapper for database replication topology. Morphling helps you to determine which connection to be
 used when execute query to the sql database. **It's not an ORM**

@@ -7,8 +7,7 @@ _**Note** : This a modified version version of [morphling](https://github.com/ah
 
 **Why you need morphling ?**
 Golang sql package is allowed you to open multiple connection, but without any restriction, means any connection you
-opened, can do all SQL manipulation (`insert`, `update`, `delete`, `select`), While slave database supposed to be only
-allowed to do `select` , with morphling it manage the master slave connection usage.
+opened, can do all SQL manipulation (`select / read`, `insert`, `update`, `delete`, `select`), While slave database supposed to be only allowed to do `select` , with morphling it manage the master slave connection usage.
 
 **Why morphling can only specify one replica ?** We can use load balancer such as HAProxy or else to handle a replica
 set, its provide abstraction to how you want to handle your replica sets load, either round robin or else.

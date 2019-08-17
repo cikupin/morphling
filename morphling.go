@@ -6,10 +6,6 @@ import (
 	"time"
 )
 
-var (
-	MySQLDriver = "mysql"
-)
-
 // DB is logical database object with main as master physical database
 // and replica as slave database with loadbalancer
 type DB struct {

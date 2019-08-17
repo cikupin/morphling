@@ -76,6 +76,16 @@ func (m *DB) Ping() error {
 	return nil
 }
 
+// GetMasterConnection returns master database connection
+func (m *DB) GetMasterConnection() *sql.DB {
+	return m.main
+}
+
+// GetSlaveConnection returns slave database connection
+func (m *DB) GetSlaveConnection() *sql.DB {
+	return m.replica
+}
+
 // QueryRow executes a query that is expected to return at most one row.
 // QueryRow always returns a non-nil value. Errors are deferred until
 // Row's Scan method is called.
